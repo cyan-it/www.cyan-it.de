@@ -1,0 +1,93 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * acumin-pro-extra-condensed:
+ *   - http://typekit.com/eulas/00000000000000007735d417
+ * acumin-pro-wide:
+ *   - http://typekit.com/eulas/00000000000000007735d412
+ * adobe-clean:
+ *   - http://typekit.com/eulas/00000000000000007735dac8
+ *   - http://typekit.com/eulas/00000000000000007735dacd
+ *   - http://typekit.com/eulas/00000000000000007735dad8
+ *   - http://typekit.com/eulas/00000000000000007735dadb
+ *   - http://typekit.com/eulas/00000000000000007735dad9
+ *   - http://typekit.com/eulas/00000000000000007735dad6
+ * degular:
+ *   - http://typekit.com/eulas/00000000000000007735c87d
+ * source-code-pro:
+ *   - http://typekit.com/eulas/00000000000000007758ce1d
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2025-10-15 15:50:06 UTC"}*/
+
+@import url("typekit-p.css");
+
+@font-face {
+font-family:"adobe-clean";
+src:url("../fonts/typekit/59b220-n4.woff2") format("woff2"),url("../fonts/typekit/59b220-n4.woff") format("woff"),url("../fonts/typekit/59b220-n4.otf") format("opentype");
+font-display:swap;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"adobe-clean";
+src:url("../fonts/typekit/597099-i4.woff2") format("woff2"),url("../fonts/typekit/597099-i4.woff") format("woff"),url("../fonts/typekit/597099-i4.otf") format("opentype");
+font-display:swap;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"adobe-clean";
+src:url("../fonts/typekit/55f17d-n7.woff2") format("woff2"),url("../fonts/typekit/55f17d-n7.woff") format("woff"),url("../fonts/typekit/55f17d-n7.otf") format("opentype");
+font-display:swap;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"adobe-clean";
+src:url("../fonts/typekit/354b11-n3.woff2") format("woff2"),url("../fonts/typekit/354b11-n3.woff") format("woff"),url("../fonts/typekit/354b11-n3.otf") format("opentype");
+font-display:swap;font-style:normal;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"adobe-clean";
+src:url("../fonts/typekit/9e2f3a-n9.woff2") format("woff2"),url("../fonts/typekit/9e2f3a-n9.woff") format("woff"),url("../fonts/typekit/9e2f3a-n9.otf") format("opentype");
+font-display:swap;font-style:normal;font-weight:900;font-stretch:normal;
+}
+
+@font-face {
+font-family:"adobe-clean";
+src:url("../fonts/typekit/d11205-i3.woff2") format("woff2"),url("../fonts/typekit/d11205-i3.woff") format("woff"),url("../fonts/typekit/d11205-i3.otf") format("opentype");
+font-display:swap;font-style:italic;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"source-code-pro";
+src:url("../fonts/typekit/80f457-n4.woff2") format("woff2"),url("../fonts/typekit/80f457-n4.woff") format("woff"),url("../fonts/typekit/80f457-n4.otf") format("opentype");
+font-display:swap;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"acumin-pro-extra-condensed";
+src:url("../fonts/typekit/f69d41-i2.woff2") format("woff2"),url("../fonts/typekit/f69d41-i2.woff") format("woff"),url("../fonts/typekit/f69d41-i2.otf") format("opentype");
+font-display:swap;font-style:italic;font-weight:200;font-stretch:normal;
+}
+
+@font-face {
+font-family:"acumin-pro-wide";
+src:url("../fonts/typekit/33df8a-n8.woff2") format("woff2"),url("../fonts/typekit/33df8a-n8.woff") format("woff"),url("../fonts/typekit/33df8a-n8.otf") format("opentype");
+font-display:swap;font-style:normal;font-weight:800;font-stretch:normal;
+}
+
+@font-face {
+font-family:"degular";
+src:url("../fonts/typekit/31d582-n8.woff2") format("woff2"),url("../fonts/typekit/31d582-n8.woff") format("woff"),url("../fonts/typekit/31d582-n8.otf") format("opentype");
+font-display:swap;font-style:normal;font-weight:800;font-stretch:normal;
+}
+
+.tk-adobe-clean { font-family: "adobe-clean",sans-serif; }
+.tk-source-code-pro { font-family: "source-code-pro",monospace; }
+.tk-acumin-pro-extra-condensed { font-family: "acumin-pro-extra-condensed",sans-serif; }
+.tk-acumin-pro-wide { font-family: "acumin-pro-wide",sans-serif; }
+.tk-degular { font-family: "degular",sans-serif; }

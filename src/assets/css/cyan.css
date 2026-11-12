@@ -1,0 +1,14 @@
+/* Structural rules for the markup fixes in index.html (no visual redesign). */
+
+/* Quotes are blockquotes now; the copy keeps the heading look. */
+blockquote.list-item-content__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  quotes: none;
+}
+
+/* Sub-headings that were h4 under an h2 are h3 now but keep the h4 size. */
+h3[data-cyan="subhead"] {
+  font-size: var(--heading-4-size);
+}
