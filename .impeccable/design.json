@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T00:00:00Z",
+  "title": "Design System: Cyan IT",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Cool Paper", "canonical": "#f7f9fa", "tonalRamp": ["#1b2227", "#3a4247", "#596166", "#7a8286", "#9ba2a6", "#bcc2c5", "#dde1e3", "#f7f9fa"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#0c1a22", "tonalRamp": ["#0c1a22", "#233640", "#3b5260", "#566f7d", "#788f9b", "#9baeb8", "#c0cdd4", "#e4eaee"] },
+      "mute": { "role": "neutral", "displayName": "Mute Slate", "canonical": "#4a5b66", "tonalRamp": ["#1d262c", "#2f3b44", "#4a5b66", "#627480", "#7e909b", "#9eacb5", "#c0cad0", "#e2e7ea"] },
+      "process-cyan": { "role": "primary", "displayName": "Process Cyan", "canonical": "#008acb", "tonalRamp": ["#00324a", "#004a6f", "#006594", "#008acb", "#33a2d5", "#66b9e0", "#99d1ea", "#cce8f5"] },
+      "deep-cyan": { "role": "primary", "displayName": "Deep Cyan", "canonical": "#00608f", "tonalRamp": ["#00202f", "#00354f", "#004a6f", "#00608f", "#2f7fa5", "#5f9fbc", "#9fc3d6", "#d4e5ee"] },
+      "plate-black": { "role": "neutral", "displayName": "Plate Black", "canonical": "#021018", "tonalRamp": ["#021018", "#1a272e", "#323e44", "#4b565b", "#666f73", "#868d90", "#b0b5b7", "#dadcdd"] },
+      "keyline": { "role": "neutral", "displayName": "Keyline", "canonical": "rgb(12 26 34 / 0.22)", "tonalRamp": ["#0c1a22", "#233640", "#3b5260", "#566f7d", "#788f9b", "#9baeb8", "#c0cdd4", "#e4eaee"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The h1 only: two stacked plates, cyan fill under an ink outline." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2." },
+      "title": { "displayName": "Title", "purpose": "Case and offer h3." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs, capped at 62ch." },
+      "label": { "displayName": "Label", "purpose": "Navigation and UI labels at width 108%." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "register", "value": "1.4s cubic-bezier(.16,1,.3,1) .15s backwards", "purpose": "The ink outline slides into register over the cyan plate on load." },
+      { "name": "sticker-settle", "value": ".35s cubic-bezier(.16,1,.3,1)", "purpose": "Hiring sticker rotate and scale on hover." },
+      { "name": "state-fade", "value": ".2s", "purpose": "Button background and colour." }
+    ],
+    "breakpoints": [
+      { "name": "narrow", "value": "56rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call to action, Deep Cyan fill, square.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Jetzt Gespräch vereinbaren</a>",
+      "css": ".ds-btn{display:inline-block;background:#00608f;color:#fff;text-decoration:none;font-family:Archivo,Arial,sans-serif;font-weight:620;font-stretch:108%;padding:.9rem 1.4rem;border:1px solid #00608f;transition:background-color .2s,color .2s}.ds-btn:hover{background:#0c1a22;border-color:#0c1a22}.ds-btn:focus-visible{outline:3px solid #00608f;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined alternate action beside the primary.",
+      "html": "<a class=\"ds-btn-alt\" href=\"#\">Hier geht's zu unseren Leistungen</a>",
+      "css": ".ds-btn-alt{display:inline-block;background:transparent;color:#00608f;text-decoration:none;font-family:Archivo,Arial,sans-serif;font-weight:620;font-stretch:108%;padding:.9rem 1.4rem;border:1px solid #00608f;transition:background-color .2s,color .2s}.ds-btn-alt:hover{background:#00608f;color:#fff}.ds-btn-alt:focus-visible{outline:3px solid #00608f;outline-offset:3px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Ink labels, Deep Cyan and underline on hover and current.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Jobs</a><a href=\"#\">Team</a><a href=\"#\">Kontakt</a></nav>",
+      "css": ".ds-nav{display:flex;gap:2rem;font-family:Archivo,Arial,sans-serif;font-stretch:108%;font-weight:560;font-size:.95rem}.ds-nav a{color:#0c1a22;text-decoration:none;padding-block:.4rem}.ds-nav a:hover,.ds-nav [aria-current]{color:#00608f;text-decoration:underline;text-underline-offset:.35em}.ds-nav a:focus-visible{outline:3px solid #00608f;outline-offset:3px}"
+    },
+    {
+      "name": "Tint Ramp",
+      "kind": "custom",
+      "description": "Ten cyan tints from 10 to 100 percent as divider and footer bar.",
+      "html": "<div class=\"ds-ramp\"><span style=\"--p:10\" data-p=\"10\"></span><span style=\"--p:30\" data-p=\"30\"></span><span style=\"--p:50\" data-p=\"50\"></span><span style=\"--p:70\" data-p=\"70\"></span><span style=\"--p:100\" data-p=\"100\"></span></div>",
+      "css": ".ds-ramp{display:grid;grid-template-columns:repeat(5,1fr);font-family:Archivo,Arial,sans-serif;font-size:.7rem;font-stretch:110%;font-weight:600;font-variant-numeric:tabular-nums;color:#4a5b66;padding-bottom:1.6rem}.ds-ramp span{position:relative;display:block;height:.9rem;background:color-mix(in srgb,#008acb calc(var(--p)*1%),#f7f9fa)}.ds-ramp span::after{content:attr(data-p) \"%\";position:absolute;top:100%;margin-top:.2rem;padding-left:.1rem}"
+    },
+    {
+      "name": "Image Plate with Crop Marks",
+      "kind": "custom",
+      "description": "Portrait plate framed by eight L-shaped crop marks.",
+      "html": "<figure class=\"ds-plate\"><div class=\"ds-img\"></div></figure>",
+      "css": ".ds-plate{position:relative;margin:1.2rem;width:9rem}.ds-img{aspect-ratio:800/875;background:#021018}.ds-plate::after{content:\"\";position:absolute;inset:-.9rem;pointer-events:none;background:linear-gradient(#0c1a22,#0c1a22) 0 0/.8rem 1px,linear-gradient(#0c1a22,#0c1a22) 0 0/1px .8rem,linear-gradient(#0c1a22,#0c1a22) 100% 0/.8rem 1px,linear-gradient(#0c1a22,#0c1a22) 100% 0/1px .8rem,linear-gradient(#0c1a22,#0c1a22) 0 100%/.8rem 1px,linear-gradient(#0c1a22,#0c1a22) 0 100%/1px .8rem,linear-gradient(#0c1a22,#0c1a22) 100% 100%/.8rem 1px,linear-gradient(#0c1a22,#0c1a22) 100% 100%/1px .8rem;background-repeat:no-repeat}"
+    },
+    {
+      "name": "Quote Block",
+      "kind": "card",
+      "description": "Case-study quote under a 1px ink rule; no box.",
+      "html": "<figure class=\"ds-quote\"><blockquote><p>„Cyan IT ist für uns ein strategischer Partner auf Augenhöhe geworden.“</p></blockquote><figcaption>– Name, Rolle, Firma</figcaption></figure>",
+      "css": ".ds-quote{margin:0;display:grid;gap:.8rem;border-top:1px solid #0c1a22;padding-top:1rem;max-width:22rem;font-family:Archivo,Arial,sans-serif}.ds-quote blockquote{margin:0}.ds-quote p{margin:0;font-size:1.15rem;line-height:1.45;font-stretch:96%;font-weight:420;color:#0c1a22}.ds-quote figcaption{font-size:.88rem;color:#4a5b66}"
+    },
+    {
+      "name": "Offer Column",
+      "kind": "custom",
+      "description": "Multiplied cyan bar over a title and copy, divided by hairlines.",
+      "html": "<div class=\"ds-offer\"><h3><a href=\"#\">SERVICES</a></h3><p>Wir entwickeln digitale Lösungen.</p></div>",
+      "css": ".ds-offer{position:relative;display:grid;gap:.8rem;padding-top:1.5rem;border-top:1px solid #0c1a22;max-width:18rem;font-family:Archivo,Arial,sans-serif}.ds-offer::before{content:\"\";mix-blend-mode:multiply;position:absolute;left:0;top:-.5rem;width:3.5rem;height:.5rem;background:color-mix(in srgb,#008acb 62%,#f7f9fa)}.ds-offer h3{margin:0;font-weight:720;font-stretch:104%;font-size:1.4rem;line-height:1.2}.ds-offer h3 a{color:#0c1a22;text-decoration:none}.ds-offer h3 a:hover{color:#00608f;text-decoration:underline}.ds-offer p{margin:0;color:#0c1a22}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Proof Sheet",
+    "overview": "The homepage reads as a print-separation proof. Process cyan is one ink laid over a black keyline plate on cool paper. The two plates are visibly separate: the headline fills in cyan while its black outline slides into register on load. Furniture from the press room (crop marks, registration targets, a 10 to 100 percent tint ramp) does the work that icons, cards and banners do on a template page.\n\nDensity is calm and editorial. Hairline ink rules divide sections; columns sit on a 12-column grid; the case studies come before the pitch. Archivo's width and weight axes carry all hierarchy, so there is one family and no ornament.\n\nScope: only src/index.html uses this system. The roughly 50 inner pages still ship the old Squarespace CSS. The closing band is a known partial (flat field with crop marks, no overprint yet).",
+    "keyCharacteristics": [
+      "One family, two axes: Archivo variable, weight 400 to 850, width 96% to 110%.",
+      "Cyan is ink, not decoration: fill for large display, deeper cyan for text and fields.",
+      "Flat and square: no radius, no shadow, no gradient, no cards.",
+      "Print furniture (crop marks, targets, tint ramp) replaces icons and containers.",
+      "Hairlines in ink or 22% ink, never boxes."
+    ],
+    "rules": [
+      { "name": "The Two-Plate Rule", "body": "Cyan fills, ink outlines. Large cyan shapes sit over or beside an ink keyline; cyan alone never carries small text.", "section": "colors" },
+      { "name": "The Overprint Rule", "body": "Where cyan or a tint meets paper or an image, it is laid with mix-blend-mode: multiply so the layers read as ink, not as opaque paint. (The closing band does not do this yet.)", "section": "colors" },
+      { "name": "The One Family Rule", "body": "Hierarchy comes from weight and width on Archivo. A second typeface is not introduced.", "section": "typography" },
+      { "name": "The Tabular Rule", "body": "Numeric furniture (tint-ramp labels, address block) uses tabular numerals.", "section": "typography" },
+      { "name": "The Flat-Proof Rule", "body": "Nothing floats. A hover may rotate or recolor an element, never lift it with a shadow.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use Process Cyan (#008acb) only for large fills and tints; use Deep Cyan (#00608f) for text, links and buttons.",
+      "Do build hierarchy with Archivo weight and width alone.",
+      "Do separate sections with a 1px Ink rule and groups with Keyline hairlines.",
+      "Do frame photographic plates with the eight crop marks and a Plate Black backing.",
+      "Do lay tints and logos with multiply so they overprint the paper.",
+      "Do keep the 3px Deep Cyan focus outline (white on the closing band) and honour reduced motion."
+    ],
+    "donts": [
+      "Don't use shadows, gradients as surfaces, rounded corners, or card containers; the world has none of them.",
+      "Don't set body-size text in Process Cyan.",
+      "Don't add a second typeface or an icon set; the print furniture is the only ornament.",
+      "Don't apply this system to the inner Squarespace pages by patching; they are unconverted and remain a separate migration."
+    ]
+  }
+}
